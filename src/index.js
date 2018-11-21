@@ -18,7 +18,6 @@ function testExport() {
     alert('hi, this is exported');
 }
 
-
 module.exports = {
     testExport
 };
