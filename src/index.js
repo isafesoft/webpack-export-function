@@ -8,14 +8,17 @@ function component() {
 }
 
 let obj = {name: 'mark', gender: 'gender'}
-if(window.hasOwnProperty('finesse'))
-{
+if (window.hasOwnProperty('finesse')) {
     console.log('mainjs, has own property', window)
 }
 
 document.body.appendChild(component());
 
-export function testExport() {
-   console.log('hi, this is exported')
+function testExport() {
+    alert('hi, this is exported');
 }
-window.testExport = testExport
+
+
+module.exports = {
+    testExport
+};
