@@ -2,7 +2,7 @@ function component() {
     let element = document.createElement('div');
 
     // Lodash, currently included via a script, is required for this line to work
-    element.innerHTML = 'hi'
+    element.innerHTML = 'hi2'
 
     return element;
 }
@@ -15,7 +15,7 @@ if (window.hasOwnProperty('finesse')) {
 document.body.appendChild(component());
 
 function testExport() {
-    alert('hi, this is exported');
+    alert('hi, this2 is exported');
 }
 
 module.exports = {
